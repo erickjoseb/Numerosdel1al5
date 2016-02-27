@@ -1,0 +1,25 @@
+# Numerosdel1al5
+Pedir numeros 5 numeros que sean mayores que 0 y si el numero ingresado es 0 o ya se ingreso los 5 numeros imprimir los numeros al revez de como se ingresaron 
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int contador=0;
+	int a[5];
+	while(contador<= 4){
+		cout<<"Ingrese un numero" << endl;
+		cin>> a[contador];
+		contador++;
+	}
+	contador=4;
+	while(contador>=0){
+		if(a[contador]==0){
+			contador=0;
+		} else{
+			cout<< a[contador] << endl;
+					contador--;
+		}
+	}
+	return 0;
+}
